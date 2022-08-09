@@ -2,10 +2,13 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
@@ -13,13 +16,25 @@
         <a class="bar-element" href="home.html"> <img id="logo-img"
                 src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="logo"></a>
         <a class="bar-element" href=""> Categories</a>
-        <input class="search-field" type="text" placeholder="Search for anything">
+        <div >
+            <form action="">
+                    <!-- <span class="material-symbols-outlined search-icon">
+                    search
+                    </span> -->
+                <input class="search-field" type="text" placeholder=" Search for anything">
+            </form>
+
+        </div>
         <a class="bar-element" href="">Udemy Business</a>
         <a class="bar-element" href="">Teach on Udemy</a>
-        <a class="bar-element" href=""><i class="fa fa-shopping-cart"></i> </a>
+        <a class="bar-element" href=""><span class="material-symbols-outlined">
+                shopping_cart
+            </span> </a>
         <button class=" log-btn">Log in</button>
         <button class=" sign-btn">Sign up</button>
-        <button class=" lang-btn"><i class="fa fa-globe"></i></button>
+        <button class=" lang-btn"><span class="material-symbols-outlined">
+            language
+            </span></button>
     </div>
     <div class="all-elements">
 
@@ -36,22 +51,26 @@
                 <h1>A broad selection of courses</h1>
                 <p class="p-font p-font-size">Choose from 185,000 online video courses with new additions published
                     every month</p>
-                <ul>
-                    <li class="courses-li"><a class="courses-a" href="#home">Python</a></li>
-                    <li class="courses-li"><a class="courses-a" href="#news">Excel</a></li>
-                    <li class="courses-li"><a class="courses-a" href="#contact">Web Development</a></li>
-                    <li class="courses-li"><a class="courses-a" href="#about">JavaScript</a></li>
-                    <li class="courses-li"><a class="courses-a" href="#news">Data Science</a></li>
-                    <li class="courses-li"><a class="courses-a" href="#contact">AWS Certification</a></li>
-                    <li class="courses-li"><a class="courses-a" href="#about">Drawing</a></li>
-                </ul>
+                <div class="courses-list">
+                    <ul>
+                        <li class="courses-li"><a class="courses-a" href="#home">Python</a></li>
+                        <li class="courses-li"><a class="courses-a" href="#news">Excel</a></li>
+                        <li class="courses-li"><a class="courses-a" href="#contact">Web Development</a></li>
+                        <li class="courses-li"><a class="courses-a" href="#about">JavaScript</a></li>
+                        <li class="courses-li"><a class="courses-a" href="#news">Data Science</a></li>
+                        <li class="courses-li"><a class="courses-a" href="#contact">AWS Certification</a></li>
+                        <li class="courses-li"><a class="courses-a" href="#about">Drawing</a></li>
+                    </ul>
+
+                </div>
+
             </div>
 
             <div class="courses-card-container">
                 <div class="cards-header">
                     <h2 class="headers">Expand your career opportunities with Python
                     </h2>
-                    <p class="p-font">Take one of Udemy’s range of Python courses and learn how to code using this
+                    <p class="p-font temp">Take one of Udemy’s range of Python courses and learn how to code using this
                         incredibly useful
                         language. Its simple syntax and readability makes Python perfect for Flask, Django, data
                         science,
@@ -68,11 +87,13 @@
                         <a class="course-links" href="">Learn Python: The Complete Python Programming Course</a>
                         <h6 class="p-font" style="color:gray">Avinash Jain, The Codex</h6>
                         <div class="rate">
+                            <p style="color: orange">4.4</p>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star star"></span>
                             <i class="fa fa-star-half-full star"></i>
+                            <h5 class="p-font" style="color:gray">(2,923)</h5>
                         </div>
                         <p>E£679.99</p>
                     </div>
@@ -82,13 +103,16 @@
                         <a class="course-links headers" href="">Learning Python for Data Analysis and Visualization</a>
                         <h6 class="p-font" style="color:gray">Jose Portilla</h6>
                         <div class="rate">
+                            <p style="color: orange">4.4</p>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star star"></span>
                             <i class="fa fa-star-half-full star"></i>
+                            <h5 class="p-font" style="color:gray">(2,923)</h5>
                         </div>
                         <p>E£1,599.99</p>
+                        <div class="best-seller">Bestseller</div>
                     </div>
                     <div class="card">
                         <img id="python-green-img" src="	https://img-b.udemycdn.com/course/480x270/405878_e5a0_3.jpg"
@@ -97,11 +121,13 @@
                             scratch</a>
                         <h6 class="p-font" style="color:gray">Jose Portilla</h6>
                         <div class="rate">
+                            <p style="color: orange">4.4</p>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star star"></span>
                             <i class="fa fa-star-half-full star"></i>
+                            <h5 class="p-font" style="color:gray">(2,923)</h5>
                         </div>
                         <p>E£679.99</p>
                     </div>
@@ -110,11 +136,13 @@
                         <a class="course-links headers" href="">Learn Python: Python for Beginners</a>
                         <h6 class="p-font" style="color:gray">Abrar Hussain</h6>
                         <div class="rate">
+                            <p style="color: orange">4.4</p>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star star"></span>
                             <i class="fa fa-star-half-full star"></i>
+                            <h5 class="p-font" style="color:gray">(2,923)</h5>
                         </div>
                         <p>E£319,99</p>
                     </div>
@@ -124,11 +152,13 @@
                             Programming</a>
                         <h6 class="p-font" style="color:gray">Infinite Skills</h6>
                         <div class="rate">
+                            <p style="color: orange">4.4</p>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star star"></span>
                             <i class="fa fa-star-half-full star"></i>
+                            <h5 class="p-font" style="color:gray">(2,923)</h5>
                         </div>
                         <p>E£519,99</p>
                     </div>
