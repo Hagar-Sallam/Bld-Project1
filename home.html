@@ -15,36 +15,45 @@
 </head>
 
 <body>
-    <div class="bar">
-        <span class="ham-btn material-symbols-outlined ">
-            menu
-        </span>
-        <a class="bar-element" href="home.html"> <img id="logo-img"
-                src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="logo"></a>
-        <a class="bar-element  bar-hide" href=""> Categories</a>
-        <div class="bar-hide">
-            <form action="">
-                <!-- <span class="material-symbols-outlined search-icon">
-                    search
-                    </span> -->
-                <input class="search-field" type="text" placeholder=" Search for anything">
-            </form>
+    <div class="bar-parent">
+        <div class="bar">
 
+            <span class="ham-btn material-symbols-outlined ">
+                menu
+            </span>
+            <a class="bar-element" href="home.html"> <img id="logo-img"
+                    src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="logo"></a>
+            <a class="bar-element  bar-hide" href=""> Categories</a>
+            <div class="search-container">
+                <form class="search-container" action="">
+                    <span class="material-symbols-outlined search-icon">
+                        search
+                    </span>
+                    <input class="search-field" type="text" placeholder=" Search for anything">
+                </form>
+
+            </div>
+            <div class="hidden-bar">
+                <span class="material-symbols-outlined hidden-bar-element ham-btn">
+                    search
+                </span>
+                <a class="bar-element hidden-bar-element " href=""><span class="material-symbols-outlined">
+                        shopping_cart
+                    </span> </a>
+            </div>
+            <a class="bar-element  bar-hide media-hide" href="">Udemy Business</a>
+            <a class="bar-element  bar-hide media-hide-2" href="">Teach on Udemy</a>
+            <a class="bar-element bar-hide" href=""><span class="material-symbols-outlined">
+                    shopping_cart
+                </span> </a>
+            <button class="bar-hide log-btn">Log in</button>
+            <button class="bar-hide sign-btn">Sign up</button>
+            <button class="lang-btn bar-hide "><span class="material-symbols-outlined">
+                    language
+                </span></button>
         </div>
-        <span class="material-symbols-outlined ham-btn">
-            search
-        </span>
-        <a class="bar-element  bar-hide" href="">Udemy Business</a>
-        <a class="bar-element  bar-hide" href="">Teach on Udemy</a>
-        <a class="bar-element" href=""><span class="material-symbols-outlined">
-                shopping_cart
-            </span> </a>
-        <button class="bar-hide log-btn">Log in</button>
-        <button class="bar-hide sign-btn">Sign up</button>
-        <button class="lang-btn bar-hide "><span class="material-symbols-outlined">
-                language
-            </span></button>
     </div>
+
     <div class="all-elements">
 
         <div class="billboard">
@@ -54,14 +63,20 @@
                 </p>
             </div>
             <img class="billboard-img" src="billboard.jpg" alt="billboard img">
+            <div class="hidden">
+                <h1>New to Udemy? Lucky you.</h1>
+                <p class="p-font p-font-size">Courses start at E£169.99. Get your new-student offer before it expires.
+                </p>
+            </div>
         </div>
-        <div class="courses">
+        <div class="courses hide-crs">
             <div class="courses-header">
-                <h1>A broad selection of courses</h1>
-                <p class="p-font p-font-size">Choose from 185,000 online video courses with new additions published
+                <h1 style="font-size: 2rem;">A broad selection of courses</h1>
+                <p style="font-size: 1rem" class="p-font p-font-size">Choose from 185,000 online video courses with new
+                    additions published
                     every month</p>
-                <div >
-                    <ul  class="courses-list">
+                <div>
+                    <ul class="courses-list">
                         <li class="courses-li"><a class="courses-a" href="#home">Python</a></li>
                         <li class="courses-li"><a class="courses-a" href="#news">Excel</a></li>
                         <li class="courses-li"><a class="courses-a" href="#contact">Web Development</a></li>
@@ -79,7 +94,8 @@
                 <div class="cards-header">
                     <h2 class="headers">Expand your career opportunities with Python
                     </h2>
-                    <p class="p-font temp bar-hide">Take one of Udemy’s range of Python courses and learn how to code using this
+                    <p class="p-font temp bar-hide">Take one of Udemy’s range of Python courses and learn how to code
+                        using this
                         incredibly useful
                         language. Its simple syntax and readability makes Python perfect for Flask, Django, data
                         science,
@@ -89,7 +105,7 @@
                     </p>
                     <button class="explore-btn">Explore Python</button>
                 </div>
-                <div class="courses-cards headers">
+                <div class="courses-cards headers hide-crs">
                     <div class="card">
                         <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg
                     " alt="sora gamela">
@@ -123,7 +139,7 @@
                         <p>E£1,599.99</p>
                         <div class="best-seller">Bestseller</div>
                     </div>
-                    <div class="card hide-crs">
+                    <div class="card ">
                         <img id="python-green-img" src="	https://img-b.udemycdn.com/course/480x270/405878_e5a0_3.jpg"
                             alt="sora gamela">
                         <a class="course-links headers" href="">Python for Beginners - Learn Programming from
@@ -140,7 +156,7 @@
                         </div>
                         <p>E£679.99</p>
                     </div>
-                    <div class="card hide-crs">
+                    <div class="card ">
                         <img src="https://img-b.udemycdn.com/course/240x135/426570_1b91_3.jpg" alt="sora gamela">
                         <a class="course-links headers" href="">Learn Python: Python for Beginners</a>
                         <h6 class="p-font" style="color:gray">Abrar Hussain</h6>
@@ -155,7 +171,7 @@
                         </div>
                         <p>E£319,99</p>
                     </div>
-                    <div class="card hide-crs">
+                    <div class="card ">
                         <img src="https://img-b.udemycdn.com/course/240x135/449532_2aa9_7.jpg" alt="sora gamela">
                         <a class="course-links headers" href="">Python Beyond the Basics - Object-Oriented
                             Programming</a>

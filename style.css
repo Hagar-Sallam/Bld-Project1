@@ -6,6 +6,9 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 #logo-img {
   height: 3.5rem;
@@ -17,21 +20,25 @@
 .courses {
   margin-bottom: 1rem;
 }
+.bar-parent {
+  width: 100%;
+}
 .bar {
-  
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: row;
   background-color: #fff;
-  /* flex-wrap: nowrap; */
   z-index: 2;
   position: relative;
-  flex-shrink: auto;
-  justify-content: space-around;
-  width: 100%;
+  /* justify-content: space-around; */
+  /* width: 100%; */
   align-items: center;
   gap: 0.9rem;
-  height: 4rem;
+  height: 4.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.bar > * {
+  flex-shrink: 0;
 }
 .bar-hide {
   display: inline-flex;
@@ -43,8 +50,8 @@
   border-width: 0.03rem;
   color: black;
   height: 2.5rem;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
   width: 5rem;
   font-weight: bold;
@@ -73,16 +80,21 @@
   width: 2.5rem;
   font-size: 1.2rem;
 }
-.bar-hide
-{
+.bar-hide {
   display: flex;
+}
+.search-container {
+  flex-shrink: 1;
+  position: relative;
+  /* min-width: 50%; */
+  width: 95%;
 }
 .search-field {
   height: 2.5rem;
   width: 43rem;
-  flex-grow: initial;
-
-  text-indent: 30px;
+  /* flex-grow: initial; */
+  width: 100%;
+  text-indent: 3rem;
   border-width: 0.03rem;
   border-radius: 1.5rem;
 }
@@ -106,14 +118,12 @@
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 2.4rem;
-  width: 23rem;
-  left: 4.8rem;
-  top: 2.4rem;
+  width: 25%;
+  left:4%;
+  top: 6%;
 }
 .billboard-img {
-  /* object-fit: cover; */
-
-  padding-top: 1rem;
+  width: 100%;
 }
 .courses-header {
   gap: 1rem;
@@ -146,6 +156,19 @@
   margin-top: 0.5rem;
   padding: 2rem;
 }
+.hidden-bar
+{
+  gap:1rem;
+  display: flex;
+  flex-direction: row;
+}
+.hidden-bar-element{
+  display: none;
+}
+.hidden-bar-element:hover
+{
+  color: purple;
+}
 .explore-btn {
   background-color: #fff;
   border-width: thin;
@@ -171,10 +194,6 @@
   color: black;
   text-decoration: none;
 }
-/* .card{ gap: 1rem;
-  width: 11rem;
-
-} */
 #python-green-img {
   width: 240px;
   height: 135px;
@@ -202,7 +221,10 @@
 .p-font-size {
   font-size: 1.2rem;
 }
-
+.hidden
+{
+  display: none;
+}
 .rate {
   display: flex;
   flex-direction: row;
@@ -220,18 +242,30 @@
   width: 60%;
 }
 .search-icon {
-  position: relative;
-  left: 23px;
-  /* top: -8px; */
-  z-index: 999;
+  position: absolute;
+  left: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%);
   color: #6a6f73;
 }
+@media screen and (max-width: 1500px){
 
-@media screen and (max-width: 500px) {
+  .hide-crs
+  {overflow: hidden;}
+}
+@media screen and (max-width: 1000px) {
   .bar {
-    justify-content: space-around;
+    justify-content: space-between;
   }
-  .bar-hide {
+  .hidden,.hidden-bar-element
+  {
+    display: block;
+  }
+  .bar-hide,.content-box {
+    display: none;
+  }
+  .search-container
+  {
     display: none;
   }
   .ham-btn {
@@ -246,4 +280,34 @@
   .billboard {
     overflow: hidden;
   }
+  .all-elements
+  {
+    width: 100%;
+  }
+ 
+  
 }
+@media screen and (max-width: 1080px) {
+  .media-hide {
+    display: none;
+  }
+  .temp
+  {width: 100%;}
+  .hide-crs
+  {
+    overflow: hidden  ;
+  }
+  
+
+}
+@media screen and (max-width: 900px) {
+  .media-hide-2 {
+    display: none;
+  }
+  .temp
+  {width: 100%;}
+  .hide-crs{
+    overflow:hidden  ;
+  }
+}
+
