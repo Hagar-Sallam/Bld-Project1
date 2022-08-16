@@ -19,6 +19,7 @@
 }
 .courses {
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 .bar-parent {
   width: 100%;
