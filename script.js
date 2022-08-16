@@ -8,14 +8,15 @@ function makeCard(course) {
 
   var courseImg = document.createElement("img");
   courseImg.src = course.image; // json
-  if(course.id==3)
-  courseImg.id="python-green-img";
+  courseImg.classList.add("course-card-img");
+  // if (course.id == 3)
+  //   courseImg.id = "python-green-img";
 
   card.appendChild(courseImg);
 
   var courseTitle = document.createElement("a");
   courseTitle.innerHTML = course.title; //json
-  courseTitle.classList.add("course-links","headers");
+  courseTitle.classList.add("course-links", "headers");
   card.appendChild(courseTitle);
 
   var courseAuthor = document.createElement("h6");
@@ -81,13 +82,40 @@ function search2(searchTitle) {
   }
   for (var course of jsonData) {
     var titleLower = course.title.toLowerCase();
-    if (titleLower.indexOf(searchTitle) != -1 ||searchTitle.length==0 )
+    if (titleLower.indexOf(searchTitle) != -1 || searchTitle.length == 0)
       makeCard(course);
   }
-  searchTitle="";
+  if(!coursesDiv.hasChildNodes())
+  {
+    var btn=document.getElementById("back");
+    btn.style.display="none";
+    var btn=document.getElementById("frwd");
+    btn.style.display="none";
+  }
+  else{
+    var btn=document.getElementById("back");
+    btn.style.display="block";
+    var btn=document.getElementById("frwd");
+    btn.style.display="block";
+  }
+  searchTitle = "";
 
 }
+function moveLeft() {
+  if (coursesDiv.hasChildNodes()) {
+    const tempFirstChild = coursesDiv.children[0];
+    coursesDiv.removeChild(tempFirstChild);
+    coursesDiv.appendChild(tempFirstChild);
+  }
+}
+function moveRight() {
+  if (coursesDiv.hasChildNodes()) {
+    const tempLastChild = coursesDiv.children[coursesDiv.children.length-1];
+    coursesDiv.removeChild(tempLastChild);
+    coursesDiv.insertBefore(tempLastChild, coursesDiv.children[0]);
+  }
 
+}
 let jsonData;
 fetch('http://localhost:3000/courses')
   .then((response) => response.json())

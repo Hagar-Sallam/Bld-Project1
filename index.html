@@ -9,8 +9,6 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -27,11 +25,12 @@
                     src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="logo"></a>
             <a class="bar-element  bar-hide" href=""> Categories</a>
             <div class="search-container">
-                <form class="search-container" action="" >
+                <form class="search-container" action="">
                     <span class="material-symbols-outlined search-icon">
                         search
                     </span>
-                    <input id="input-field" class="search-field" type="text" placeholder=" Search for anything" onkeyup="search()">
+                    <input id="input-field" class="search-field" type="text" placeholder=" Search for anything"
+                        onkeyup="search()">
                 </form>
 
             </div>
@@ -107,88 +106,20 @@
                     </p>
                     <button class="explore-btn">Explore Python</button>
                 </div>
-                <div id="all-courses" class="courses-cards headers hide-crs">
-                    <!-- <div class="card">
-                        <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg
-                    " alt="sora gamela">
-                        <a class="course-links" href="">Learn Python: The Complete Python Programming Course</a>
-                        <h6 class="p-font" style="color:gray">Avinash Jain, The Codex</h6>
-                        <div class="rate">
-                            <p style="color: orange">4.4</p>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star star"></span>
-                            <i class="fa fa-star-half-full star"></i>
-                            <h5 class="p-font" style="color:gray">(2,923)</h5>
-                        </div>
-                        <p>E£679.99</p>
+                <div class="courses-carsoul">
+                    <button id="back" class="arrow-btn arrow-btn-back">
+                        <span class="material-symbols-outlined" onclick="moveLeft()">
+                            arrow_forward_ios
+                        </span>
+                    </button>
+                 
+                    <div id="all-courses" class="courses-cards headers hide-crs">
                     </div>
-                    <div class="card">
-                        <img src="	https://img-b.udemycdn.com/course/240x135/396876_cc92_7.jpg
-                    " alt="sora gamela">
-                        <a class="course-links headers" href="">Learning Python for Data Analysis and Visualization</a>
-                        <h6 class="p-font" style="color:gray">Jose Portilla</h6>
-                        <div class="rate">
-                            <p style="color: orange">4.4</p>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star star"></span>
-                            <i class="fa fa-star-half-full star"></i>
-                            <h5 class="p-font" style="color:gray">(2,923)</h5>
-                        </div>
-                        <p>E£1,599.99</p>
-                        <div class="best-seller">Bestseller</div>
-                    </div>
-                    <div class="card ">
-                        <img id="python-green-img" src="	https://img-b.udemycdn.com/course/480x270/405878_e5a0_3.jpg"
-                            alt="sora gamela">
-                        <a class="course-links headers" href="">Python for Beginners - Learn Programming from
-                            scratch</a>
-                        <h6 class="p-font" style="color:gray">Jose Portilla</h6>
-                        <div class="rate">
-                            <p style="color: orange">4.4</p>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star star"></span>
-                            <i class="fa fa-star-half-full star"></i>
-                            <h5 class="p-font" style="color:gray">(2,923)</h5>
-                        </div>
-                        <p>E£679.99</p>
-                    </div>
-                    <div class="card ">
-                        <img src="https://img-b.udemycdn.com/course/240x135/426570_1b91_3.jpg" alt="sora gamela">
-                        <a class="course-links headers" href="">Learn Python: Python for Beginners</a>
-                        <h6 class="p-font" style="color:gray">Abrar Hussain</h6>
-                        <div class="rate">
-                            <p style="color: orange">4.4</p>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star star"></span>
-                            <i class="fa fa-star-half-full star"></i>
-                            <h5 class="p-font" style="color:gray">(2,923)</h5>
-                        </div>
-                        <p>E£319,99</p>
-                    </div>
-                    <div class="card ">
-                        <img src="https://img-b.udemycdn.com/course/240x135/449532_2aa9_7.jpg" alt="sora gamela">
-                        <a class="course-links headers" href="">Python Beyond the Basics - Object-Oriented
-                            Programming</a>
-                        <h6 class="p-font" style="color:gray">Infinite Skills</h6>
-                        <div class="rate">
-                            <p style="color: orange">4.4</p>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star checked star"></span>
-                            <span class="fa fa-star star"></span>
-                            <i class="fa fa-star-half-full star"></i>
-                            <h5 class="p-font" style="color:gray">(2,923)</h5>
-                        </div>
-                        <p>E£519,99</p>
-                    </div> -->
+                    <button id="frwd" class="arrow-btn arrow-btn-forward" onclick="moveRight()">
+                        <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
